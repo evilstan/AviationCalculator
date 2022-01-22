@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/biruza">
+
+    <RelativeLayout
+        android:id="@+id/layout_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/text_top_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:maxLength="4"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_top_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:maxLength="4"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_top_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:maxLength="4"
+            android:text="0"
+            android:textSize="20sp"
+            android:translationX="120dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_text1"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/text_middle_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:maxLength="8"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_middle_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:maxLength="8"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_middle_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:maxLength="8"
+            android:text="0"
+            android:textSize="20sp"
+            android:translationX="120dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_text2"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/text_bottom_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:maxLength="8"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_bottom_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:maxLength="8"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_bottom_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:maxLength="8"
+            android:text="0"
+            android:textSize="20sp"
+            android:translationX="120dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_text3"
+        android:layout_centerHorizontal="true"
+        android:text="Hello" />
+
+    <com.evilstan.aviationcalculator.Gauge
+        android:id="@+id/gauge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_new"
+        android:layout_centerInParent="true"
+        app:max_angle="360"
+        app:pointer_axle="0.66"
+        app:start_angle="50"
+        app:damped="false"
+        app:fast="true"/>
+
+</RelativeLayout>

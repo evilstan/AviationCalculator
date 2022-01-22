@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="btn_margin_hor">1</integer>
+    <integer name="btn_size">80</integer>
+</resources>

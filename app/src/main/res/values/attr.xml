@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LightButton">
+        <attr name="image_on" format="reference"/>
+        <attr name="sound_push" format="reference"/>
+        <attr name="sound_release" format="reference"/>
+        <attr name="fixed" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="Gauge">
+        <attr name="pointer_axle" format="float"/>
+        <attr name="start_angle" format="integer"/>
+        <attr name="max_angle" format="integer"/>
+        <attr name="damped" format="boolean" />
+        <attr name="fast" format="boolean" />
+    </declare-styleable>
+</resources>

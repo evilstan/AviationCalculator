@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biruza"
+    tools:context=".MainActivity">
+
+    <com.evilstan.aviationcalculator.LightButton
+        android:id="@+id/btn_calc"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/lin_lay_mechanical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="15dp"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_calc_off"
+        app:image_on="@drawable/btn_calc_on"
+        app:sound_push="@raw/click3"
+        app:sound_release="@raw/click4" />
+
+    <com.evilstan.aviationcalculator.LightButton
+        android:id="@+id/btn_sensor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/lin_lay_mechanical"
+        android:layout_marginVertical="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/btn_calc"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn_plus"
+        app:image_on="@drawable/btn_plus_on"
+        app:sound_push="@raw/click3"
+        app:sound_release="@raw/click4" />
+
+    <ImageView
+        android:id="@+id/lamp_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lin_lay_buttons"
+        android:layout_toStartOf="@id/gauge1"
+        android:src="@drawable/lamp_red_off"
+        android:translationX="40dp"
+        android:translationY="-20dp" />
+
+    <ImageView
+        android:id="@+id/lamp_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lin_lay_buttons"
+        android:layout_toEndOf="@id/gauge1"
+        android:src="@drawable/lamp_green_off"
+        android:translationX="-40dp"
+        android:translationY="-20dp" />
+
+    <com.evilstan.aviationcalculator.Gauge
+        android:id="@+id/gauge1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:max_angle="360"
+        app:pointer_axle="0.66"
+        app:start_angle="50"/>
+
+    <LinearLayout
+        android:id="@+id/lin_lay_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gauge1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_rect"
+        android:orientation="horizontal">
+
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_charge"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="30dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_charge_off"
+            app:image_on="@drawable/btn_charge_on"
+            app:sound_push="@raw/click6"
+            app:sound_release="@raw/click5" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_date"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="30dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_date_off"
+            app:image_on="@drawable/btn_date_on"
+            app:sound_push="@raw/click6"
+            app:sound_release="@raw/click5" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_time"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="30dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_time_off"
+            app:image_on="@drawable/btn_time_on"
+            app:sound_push="@raw/click6"
+            app:sound_release="@raw/click5" />
+
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_compass"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="30dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_comp_off"
+            app:image_on="@drawable/btn_comp_on"
+            app:sound_push="@raw/click6"
+            app:sound_release="@raw/click5" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_lay_mechanical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_lay_buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="15dp"
+        android:orientation="horizontal">
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind100000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind10000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

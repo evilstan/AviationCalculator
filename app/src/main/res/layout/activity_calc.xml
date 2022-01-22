@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biruza"
+    tools:context=".CalcActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lin_lay_neg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/round_rect">
+
+        <ImageView
+            android:id="@+id/lamp_red1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/lamp_red_off" />
+
+        <TextView
+            android:id="@+id/tv_negative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="ОТРИЦАТЕЛЬНОЕ ЧИСЛО"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_lay_mechanical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_lay_neg1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind100000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind10000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/deciaml_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lin_lay_mechanical2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/decimal_dot" />
+
+
+    <LinearLayout
+        android:id="@+id/lin_lay_mechanical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_lay_mechanical1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind200000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind20000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind2000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/m_ind2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_lay_neg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_lay_mechanical2"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/round_rect">
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="0dp"
+            android:src="@drawable/btn_round_off"
+            app:fixed="true"
+            app:image_on="@drawable/btn_round_on" />
+
+
+        <ImageView
+            android:id="@+id/lamp_green1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/lamp_green_off" />
+
+        <TextView
+            android:id="@+id/tv_negative2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="СБРОС"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/deciaml_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lin_lay_neg2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/decimal_dot" />
+
+    <LinearLayout
+        android:id="@+id/lin_lay_buttons4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_lay_neg2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_rect"
+        android:orientation="horizontal">
+
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_divide"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_divide"
+            app:fixed="false"
+            app:image_on="@drawable/btn_divide_on" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_multiply"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_multiply"
+            app:fixed="false"
+            app:image_on="@drawable/btn_multiply_on" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_minus"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_minus"
+            app:fixed="false"
+            app:image_on="@drawable/btn_minus_on" />
+
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_plus"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_plus"
+            app:fixed="false"
+            app:image_on="@drawable/btn_plus_on" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_lay_buttons3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_lay_buttons4"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_rect"
+        android:orientation="horizontal">
+
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_enter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_enter_off"
+            app:image_on="@drawable/btn_enter_on" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_seven"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_seven"
+            app:image_on="@drawable/btn_seven" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_eight"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_eight"
+            app:image_on="@drawable/btn_eight" />
+
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_nine"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_nine"
+            app:image_on="@drawable/btn_nine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_lay_buttons2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_lay_buttons3"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_rect"
+        android:orientation="horizontal">
+
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_dot"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_reset_off"
+            app:image_on="@drawable/btn_reset_on" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_four"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_four"
+            app:image_on="@drawable/btn_four" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_five"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_five"
+            app:image_on="@drawable/btn_five" />
+
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_six"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_six"
+            app:image_on="@drawable/btn_six" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_lay_buttons1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_lay_buttons2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_rect"
+        android:orientation="horizontal">
+
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_zero"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_zero"
+            app:image_on="@drawable/btn_zero" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_one"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_one"
+            app:image_on="@drawable/btn_one" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_two"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_two"
+            app:image_on="@drawable/btn_two" />
+
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_three"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_three"
+            app:image_on="@drawable/btn_three" />
+    </LinearLayout>
+
+</RelativeLayout>

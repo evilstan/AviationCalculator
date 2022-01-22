@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biruza"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/indicators1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_1100000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_110000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_11000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_1100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_110"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/indicators2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/indicators1"
+        android:layout_margin="4dp">
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_2100000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_210000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_21000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_2100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_210"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/indicators3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/indicators2"
+
+        android:layout_margin="4dp">
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_3100000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_310000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_31000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_3100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_310"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.evilstan.aviationcalculator.MechanicalIndicator
+            android:id="@+id/sensor_int_31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/indicators3">
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_accel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_one"
+            app:image_on="@drawable/btn_one" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_gyro"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_two"
+            app:image_on="@drawable/btn_two" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_magnetic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_three"
+            app:image_on="@drawable/btn_three" />
+
+        <com.evilstan.aviationcalculator.LightButton
+            android:id="@+id/btn_light"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_four"
+            app:image_on="@drawable/btn_four" />
+
+    </LinearLayout>
+</RelativeLayout>
